@@ -1,15 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
+data:
+  AWS_BUCKET: udacity-prj3-bucket
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: anysecret
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: cdr.cgkju2ujn2qt.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
 metadata:
   name: env-config
-data:
-  POSTGRES_USERNAME: postgres
-  POSTGRES_PASSWORD: postgres
-  POSTGRES_HOST: database-1.comb4hoh2nqs.us-east-1.rds.amazonaws.com
-  POSTGRES_DB: postgres
-  AWS_BUCKET: mono123456
-  AWS_REGION: us-east-1AWS_PROFILE=default
-  JWT_SECRET: testing
-  URL: http://localhost:8100
-
-
